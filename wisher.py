@@ -2,12 +2,9 @@ import pandas as pd
 import datetime
 import smtplib
 from binary import binary_to_str
-import os
 
-os.chdir(r"C:\Users\user\Documents\Python Codes\Automatic Birthday wisher")
-os.mkdir("Testing")
-GMAIL_ID = "rfautomaticmailbot@gmail.com"
-GMAIL_PSWD = binary_to_str("011000010111010101110100011011110110110101100001011101000110010101100010011011110111010001101111011001100110011001100001011010000110000101100100")
+GMAIL_ID = "<Your-Email>"
+GMAIL_PSWD = binary_to_str("<Your-Gmail-Password-In-Binary-For-Security>")
 
 def sendEmail(to, sub, msg):
     print(f"Successfully sent email to : {to}\nSubject: {sub}\nMessage: {msg}")
